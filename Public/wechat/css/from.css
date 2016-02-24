@@ -1,0 +1,69 @@
+﻿body, html {-webkit-tap-highlight-color: transparent;}
+html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+* {margin: 0;padding: 0;}
+body {background-color:#f5f5f5;font-family:'Microsoft YaHei';}
+.view {position:absolute;top:0;left:0;right:0;bottom:0;overflow:scroll;}
+.icon-arrow-left {width: 10px;height: 10px;border: 1px solid #fff;border-width: 1px 0 0 1px;display: inline-block;
+-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);transform: rotate(-45deg);}
+header,.cell {position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;}
+header {height:40px;color:#fff;padding:0 15px;position: fixed;left: 0;right: 0;z-index: 9;}
+header>h1,.cell>.cnt{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;}
+header>h1 {text-align:center;font-size:16px;}
+article {background-color:#fff;margin-top:40px;overflow: hidden;}
+.cell {padding:12px 15px;border-bottom:1px solid #e7e7e7;}
+.cell>.tit{margin-right:24px;height: 1.41176471em;line-height: 1.41176471;}
+.cell>.cnt{}
+.cell>.cnt>.input{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;width:100%;border:0;outline:0;background-color:transparent;font-size:inherit;color:inherit;height:1.41176471em;line-height:1.41176471;
+          outline:none;
+          border-radius:0;
+}
+.cell>.cnt>.input::-webkit-outer-spin-button,
+.cell>.cnt>.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cell>.cnt>.select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;border:0;outline:0;background-color:transparent;width:100%;font-size:inherit;height:1.41176471em;position:relative;z-index:1;padding-left:15px;}
+.cell-multi{
+    -webkit-box-align:start;-webkit-align-items:start;-ms-flex-align:start;align-items:start;
+    -webkit-box-align:flex-start;-webkit-align-items:flex-start;-ms-flex-align:flex-start;align-items:flex-start;}
+.cnt-radio {margin:-7px 0;margin-right: -30px;}
+.radio{margin-right:30px;overflow:hidden;display:inline-block;float:left;line-height:20px;padding:7px 0}
+.radio>label{float:left;outline: none;}
+.radio > label:focus {background-color:#fff;}
+.radio>.radio-input{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+    position:relative;width:16px;height:16px;
+    border:1px solid #DFDFDF;outline:0;box-sizing:border-box;background-color:transparent;margin:2px 10px 0 0;float:left;
+    border-radius:0;
+}
+
+.radio>.radio-input:before{content:" ";position:absolute;top:0;left:0;width:14px;height:14px;background-color:#fff;-webkit-transition:-webkit-transform .3s;transition:transform .3s}
+.radio>.radio-input:checked{border:1px solid transparent}
+.radio>.radio-input:checked:before{-webkit-transform:scale(0);transform:scale(0)}
+.input-date{position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;background:url() right center no-repeat;background-size:auto 100%;}
+footer {color:#cecece;font-size:12px;text-align:center;padding:20px 0;position: absolute;left: 0;bottom: 0;right: 0;}
+
+/*闪GO会员召集*/
+.shangou.view {min-height: 470px;}
+.shangou header {background-color:#05c5fc;}
+.shangou .radio > .radio-input {background-color:#00c0ff;}
+.shangou .radio>.radio-input:checked{border-color:#00c0ff}
+.shangou .input-date {background-image:url(../images/date-shangou.png);}
+
+/*臻享会员召集*/
+.zhenxiang.view {min-height: 670px;}
+.zhenxiang header {background-color:#ff7e00;}
+.zhenxiang .radio > .radio-input {background-color:#ff7e00;}
+.zhenxiang .radio>.radio-input:checked{border-color:#ff7e00}
+.zhenxiang .input-date {background-image:url(../images/date-zhenxiang.png);}

@@ -1,0 +1,17 @@
+﻿body {font-family:'Microsoft YaHei';}
+header img {width:100%;display:block;}
+li {border-bottom:1px solid #f3f3f3;padding:40px 0 47px;}
+li:last-child {border-bottom:0;}
+article {text-align:center;}
+h4 {font-size:24px;color:#ffae00;position:relative;display:inline-block;height:46px;line-height:46px;min-width:210px;}
+h4:before,h4:after {content:'';display:block;position:absolute;width:19px;top:0;bottom:0;background:url(../images/tit-bg.png) 0 0 no-repeat;background-size:auto 100%;}
+h4:before {left:0;}
+h4:after {right:0;transform:rotateZ(180deg);}
+h4>strong{margin-right:.5em;}
+.shangou h4>strong{color:#05c5fc;}
+.zhenxiang h4>strong{color:#fc3305;}
+
+.rq-code {padding-top:28px;}
+.rq-code-copy {font-size:16px;color:#cfcfcf;line-height:1em;padding-top:14px;}
+
+@media screen and (max-height:900px) {li {padding-bottom: 20px;padding-top: 27px;}}
